@@ -25,6 +25,11 @@
   </table>
 </div>
 
+<div class="mt-4 ms-5">
+  <div *ngFor="let marca of conteoPorMarca | keyvalue">
+    Total {{ marca.key }}: {{ marca.value }}
+  </div>
+</div>
 
 <footer class="text-center mt-5 p-3 border-top text-muted small">
   Contacto: +57 3102105253 • info&#64;tusegundazo.com • &#64;tusegundazo
