@@ -1,1 +1,31 @@
-<p>listar-vehiculos works!</p>
+<div class="p-3 text-start">
+  <img src="assets/logo-tusegundazo.png" alt="TuSegundazo.com" class="img-fluid mb-2" />
+  <hr />
+  <img src="assets/slogan-tusegundazo.png" alt="Comercialización de Automotores Nuevos y Usados" class="img-fluid" />
+</div>
+
+<div class="tabla-wrapper">
+  <table class="table table-bordered table-hover text-center">
+    <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Marca</th>
+        <th>Línea</th>
+        <th>Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of vehiculos; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ v.marca }}</td>
+        <td>{{ v.linea }}</td>
+        <td>{{ v.modelo }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<footer class="text-center mt-5 p-3 border-top text-muted small">
+  Contacto: +57 3102105253 • info&#64;tusegundazo.com • &#64;tusegundazo
+</footer>
